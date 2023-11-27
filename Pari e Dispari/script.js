@@ -5,7 +5,7 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 
 // Chiediamo a User se sceglie Pari o Dispari
 
-const pariODispari = prompt('Scegli se Pari o Dispari');
+const pariODispari = prompt('Scegli se pari o dispari');
 
 // Stampiamo la sua scelta 
 
@@ -40,14 +40,14 @@ console.log (`Il numero casuale del PC è: "${computerNumber}"`)
 
 const sommaNumber = numberUser + computerNumber;
 
-const isSumEven = pari(sommaNumber);
+const sommaPari = pari(sommaNumber);
 
 // Dichiariamo il vincitore
 
-if ((pariODispari === "pari" && isSumEven) || (pariODispari === "dispari" && !isSumEven)) {
+if ((pariODispari === "pari" && sommaPari) || (pariODispari === "dispari" && !sommaPari)) {
 
     console.log(`Hai vinto! La somma (${numberUser} + ${computerNumber} = ${sommaNumber}) è ${pariODispari}.`);
   } else {
     
-    console.log(`Hai perso! La somma (${numberUser} + ${computerNumber} = ${sommaNumber}) è ${(isSumEven ? 'pari' : 'dispari')}.`);
+    console.log(`Hai perso! La somma (${numberUser} + ${computerNumber} = ${sommaNumber}) è ${(sommaPari ? 'pari' : 'dispari')}.`);
   }
